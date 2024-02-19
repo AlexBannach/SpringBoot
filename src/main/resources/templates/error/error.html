@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TWProjects - Error</title>
+    <!-- Importando o CSS do PicoCSS -->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@1.5.10/css/pico.min.css"
+    />
+</head>
+</html>
+<body>
+<nav class="container-fluid">
+    <ul>
+        <li><strong>TWProjects</strong></li>
+    </ul>
+    <ul>
+        <li><a href="/clients">Clientes</a></li>
+        <li><a href="/clients/create">Cadastrar Clientes</a></li>
+        <li><a href="contato.php">Contato</a></li>
+    </ul>
+</nav>
+<main class="container">
+    <h1>Erro Interno</h1>
+    <p th:text="${message}"></p>
+    <p>
+        <a onclick="window.history.back()">Clique aqui</a> para voltar a página anterior.
+    </p>
+
+</main>
+
+</body>
+
